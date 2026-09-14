@@ -141,7 +141,7 @@ Dùng **Optuna**, hàm mục tiêu dựa trên Mean Aspect Macro F1 trên tập 
 ## Cài đặt
 
 ```bash
-git clone https://github.com/<username>/vietnamese-hotel-absa.git
+git clone https://github.com/<nickeydinh>/vietnamese-hotel-absa.git
 cd vietnamese-hotel-absa
 pip install -r requirements.txt
 ```
@@ -155,7 +155,7 @@ python -c "import py_vncorenlp; py_vncorenlp.download_model(save_dir='./vncorenl
 
 ### Model weights
 
-Trọng số mô hình đã fine-tune không được đưa lên repo do giới hạn dung lượng của GitHub. Tải tại: **[link Google Drive]**
+Trọng số mô hình đã fine-tune không được đưa lên repo do giới hạn dung lượng của GitHub. Tải tại: [**[link Google Drive]**](https://drive.google.com/drive/folders/1E9Q0pqQTqElctPjp4uFNlbf_LVhWguPI)
 
 Giải nén vào thư mục `models/`.
 
@@ -190,18 +190,9 @@ Giao diện cho phép nhập review bất kỳ, chọn mô hình suy luận (Pho
 ```
 vietnamese-hotel-absa/
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb      # Làm sạch, khử trùng lặp
-│   ├── 02_eda.ipynb                # Phân tích phân bố nhãn
-│   ├── 03_preprocessing.ipynb      # VnCoreNLP, chia tập
-│   ├── 04_hpo_training.ipynb       # Optuna + fine-tuning
-│   └── 05_evaluation.ipynb         # Đánh giá, confusion matrix
-├── src/
-│   ├── model.py                    # Kiến trúc multi-head
-│   ├── dataset.py                  # Dataset, tokenization
-│   ├── train.py                    # Vòng lặp huấn luyện
-│   ├── evaluate.py                 # Các chỉ số đánh giá
-│   └── inference.py                # Pipeline suy luận
-├── app.py                          # Giao diện demo
+│   ├── ABSA.ipynb
+│   ├── ABSA_demo.ipynb
+│   ├── ABSA_visualizations.ipynb    
 ├── requirements.txt
 └── README.md
 ```
