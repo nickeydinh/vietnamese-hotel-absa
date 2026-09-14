@@ -1,0 +1,33 @@
+# Model weights
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+models/
+checkpoints/
+outputs/
+
+# Du lieu
+data/*
+!data/sample.csv
+
+# VnCoreNLP
+vncorenlp/
+*.jar
+
+# Optuna
+*.db
+optuna_study/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+venv/
+.venv/
+
+# He dieu hanh
+.DS_Store
+Thumbs.db
